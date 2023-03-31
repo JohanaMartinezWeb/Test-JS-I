@@ -182,6 +182,14 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
+
+  if (numero < 2) return false; 
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 function doWhile(numero) {
@@ -189,7 +197,16 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   //Tu código:
-}
+
+    let count = 0; 
+    do {
+      numero += 5; 
+      count++; 
+    } while (count < 8); 
+    return numero; 
+  }
+  
+
 
 // No modificar nada debajo de esta línea, sino no correrán los test.
 // --------------------------------

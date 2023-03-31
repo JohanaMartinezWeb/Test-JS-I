@@ -188,7 +188,9 @@ function mayorACien(array) {
      nuevoarray.push(array[index])
 
     } 
-}
+  }
+   return nuevoarray
+  
 }
 // No modificar nada debajo de esta línea, de lo contrario no correrán los test.
 // --------------------------------
